@@ -44,8 +44,8 @@ if st.session_state.room_data:
         st.text(f"Room {room['number']} - {room['type'].capitalize()} - {room['size']}")
 
 # Connectivity Input
-connections = st.text_area("Enter Room Connections (format: room_num1-weight-room_num2)",
-                           placeholder="Example: 1-5-2\n2-3-4")
+connections = st.text_area("Enter Room Connections (format: room_num1,connectivity,room_num2)",
+                           placeholder="Example: 1,1,2\n2,-1,4")
 
 # Boundary Input
 boundary_coords = st.text_area("Enter Boundary Coordinates (format: x1,y1 x2,y2 ...)",
